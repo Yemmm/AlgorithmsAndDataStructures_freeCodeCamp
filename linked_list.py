@@ -87,7 +87,7 @@ class LinkedList:
             current = self.head
 
             while position > 1:
-                current = node.next_node
+                current = current.next_node
                 position -= 1
 
             prev_node = current
@@ -145,7 +145,7 @@ class LinkedList:
         current = self.head
 
         while current:
-            if (current is self.head):
+            if current is self.head:
                 nodes.append("[Head: %s]" % current.data)
             elif current.next_node is None:
                 nodes.append("[Tail: %s]" % current.data)
@@ -153,4 +153,4 @@ class LinkedList:
                 nodes.append("[%s]" % current.data)
 
             current = current.next_node
-        return '->'.join(nodes)
+        return '-> '.join(nodes)
