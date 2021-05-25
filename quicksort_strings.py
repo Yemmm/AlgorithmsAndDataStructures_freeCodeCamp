@@ -13,7 +13,7 @@ def quicksort(values):
     return quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
 
 
-numbers = [4, 6, 3, 2, 9, 7, 3, 5]
-print(numbers)
-sorted_numbers = quicksort(numbers)
-print(sorted_numbers)
+names = ["Ayee Bee", "Cee Dee", "Ee Ef", "A B"]
+sorted_names = quicksort(names)
+for n in sorted_names:
+    print(n)
